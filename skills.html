@@ -4,9 +4,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/skills/skills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Skills</title>
 </head>
 <body>
-    
+    <header>
+        <a href="skills.html" class="brand">Skills</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="skills.html">Skills</a>
+                <a href="photography.html">Photography</a>
+                <a href="store.html">CBJeeBees Store</a>
+                <a href="drag.html">Drag</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+        <img class="img-slide" src="/css/media/code.jpg" alt="">
+        <img class="img-slide" src="/css/media/computer.jpg" alt="">
+        <img class="img-slide" src="/css/media/guycoding.jpg" alt="">
+        <img class="img-slide" src="/css/media/seo.jpg" alt="">
+        <img class="img-slide" src="/css/media/matrix.jpg" alt="">
+        <div class="content">
+            <h1>HTML.<br><span>Advance HTML</span></h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, quam optio fugiat, facere porro consectetur dolores ipsum dolore perspiciatis sed quis nam exercitationem laboriosam ex quaerat cum harum, nostrum fugit vitae ipsa dignissimos laudantium atque ea. Fuga nobis placeat, error aut sint, ex asperiores nemo amet, quas explicabo laborum accusantium!</p>
+            <a href="">Learn More</a>
+        </div>
+        <div class="content">
+            <h1>Javascript<br><span>bleh</span></h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, quam optio fugiat, facere porro consectetur dolores ipsum dolore perspiciatis sed quis nam exercitationem laboriosam ex quaerat cum harum, nostrum fugit vitae ipsa dignissimos laudantium atque ea. Fuga nobis placeat, error aut sint, ex asperiores nemo amet, quas explicabo laborum accusantium!</p>
+            <a href="">Learn More</a>
+        </div>
+        <div class="content">
+            <h1>CSS<br><span>Advance CSS/Bootsrap</span></h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, quam optio fugiat, facere porro consectetur dolores ipsum dolore perspiciatis sed quis nam exercitationem laboriosam ex quaerat cum harum, nostrum fugit vitae ipsa dignissimos laudantium atque ea. Fuga nobis placeat, error aut sint, ex asperiores nemo amet, quas explicabo laborum accusantium!</p>
+            <a href="">Learn More</a>
+        </div>
+        <div class="content">
+            <h1>SEO<br><span>bleh</span></h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, quam optio fugiat, facere porro consectetur dolores ipsum dolore perspiciatis sed quis nam exercitationem laboriosam ex quaerat cum harum, nostrum fugit vitae ipsa dignissimos laudantium atque ea. Fuga nobis placeat, error aut sint, ex asperiores nemo amet, quas explicabo laborum accusantium!</p>
+            <a href="">Learn More</a>
+        </div>
+        <div class="content">
+            <h1>From Webpage<br><span>to Website</span></h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae, quam optio fugiat, facere porro consectetur dolores ipsum dolore perspiciatis sed quis nam exercitationem laboriosam ex quaerat cum harum, nostrum fugit vitae ipsa dignissimos laudantium atque ea. Fuga nobis placeat, error aut sint, ex asperiores nemo amet, quas explicabo laborum accusantium!</p>
+            <a href="">Learn More</a>
+        </div>
+        <div class="media-icons">
+            <a href=""> <i class="fa-brands fa-github-alt"></i></a>
+            <a href=""> <i class="fa-brands fa-codepen"></i></a>    
+            <a href=""> <i class="fa-brands fa-linkedin-in"></i></a>    
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+
+        </div>
+
+    </section>
+    <script type="text/javascript">
+        //Javascript of responsive navigation menu
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+        menuBtn.addEventListener("click",() => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+
+        //javascript for photo slider navigation
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".img-slide");
+        const contents = document.querySelectorAll(".content");
+
+        var sliderNav = function(manual){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+            contents.forEach((content) => {
+                content.classList.remove("active");
+            });
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+            });
+        });
+
+    </script>
 </body>
 </html>

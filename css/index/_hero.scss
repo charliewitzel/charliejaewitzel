@@ -14,7 +14,7 @@
         font-size: 4rem;    
         text-transform: uppercase;
         text-align: center; 
-        background: rgba(0,0,0,0.2);
+        background: linear-gradient(to bottom right, rgb(255, 204, 255, 0.5), rgb(153, 204, 255, 0.5));;
         padding: 2rem;
         border-radius: 20px 0;
 
@@ -31,7 +31,7 @@
         }
         &::after{
             right: 0;
-            border-top: 10px solid rgb(248, 247, 247);
+            border-top: 10px solid rgb(231, 107, 225);
         }
     }
 }
