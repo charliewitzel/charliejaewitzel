@@ -120,7 +120,6 @@ section{
     -webkit-text-stroke: .7px var(--main-color);
     background-image: linear-gradient(var(--main-color), var(--main-color));
     background-repeat: no-repeat;
-    -webkit-background-clip: text;
     background-position: 0 0;
     animation: homeBgText 6s linear infinite;
     animation-delay: 2s;
@@ -147,7 +146,6 @@ section{
     -webkit-text-stroke: .7px white;
     background-image: linear-gradient(white, white);
     background-repeat: no-repeat;
-    -webkit-background-clip: text;
     background-position: 0 0;
     animation: homeBgText 6s linear infinite;
     animation-delay: 2.2s;
@@ -173,7 +171,6 @@ section{
     -webkit-text-stroke: .7px rgb(247, 104, 216);
     background-image: linear-gradient(rgb(247, 104, 216), rgb(247, 104, 216));
     background-repeat: no-repeat;
-    -webkit-background-clip: text;
     background-position: 0 0;
     animation: homeBgText 6s linear infinite;
     animation-delay: 2.4s;
@@ -199,7 +196,6 @@ section{
     -webkit-text-stroke: .7px rgb(110, 31, 212);
     background-image: linear-gradient(rgb(110, 31, 212), rgb(110, 31, 212));
     background-repeat: no-repeat;
-    -webkit-background-clip: text;
     background-position: 0 0;
     animation: homeBgText 6s linear infinite;
     animation-delay: 2.6s;
