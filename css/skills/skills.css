@@ -83,6 +83,9 @@ section {
 }
 .home .content.active {
   display: block;
+  background: linear-gradient(to bottom right, rgba(43, 42, 43, 0.751), rgba(24, 61, 97, 0.682));
+  padding: 1.5rem;
+  
 }
 .home .content.active h1 {
   font-size: 4rem;
@@ -91,13 +94,16 @@ section {
   letter-spacing: 5px;
   line-height: 75px;
   margin-bottom: 40px;
+  
 }
 .home .content.active h1 span {
   font-size: 1.2rem;
   font-weight: 600;
 }
 .home .content.active p {
+  font-size: 1.3rem;
   margin-bottom: 65px;
+ 
 }
 .home .content.active a {
   background: white;
