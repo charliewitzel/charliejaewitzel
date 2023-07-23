@@ -17,3 +17,16 @@ window.onscroll = () => {
 
     header.classList.toggle('sticky', window.scrollY > 100);
 }
+//light dark mode
+ var icon = document.getElementById("icon");
+
+ icon.onclick = function(){
+    document.body.classList.toggle("light-theme")
+    if(document.body.classList.contains("light-theme")){
+        icon.src = "./css/media/moon.png";
+    } else {
+        icon.src = "./css/media/sun1.png";
+    }
+ }
+
+ 
